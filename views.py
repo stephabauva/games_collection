@@ -4,7 +4,7 @@ from app import app
 
 @app.route("/")
 def index():
-    games = Games.query.all()
+    games = Game.query.all()
     return render_template("index.html", games=games)
 
 @app.route("/create", methods=["GET", "POST"])

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Chercher un jeu</h2>
+
+<form action="{{ url_for('search') }}" method="POST">
+    <input type="text" name="query" placeholder="Entrez le nom du jeu...">
+    <button type="submit">Chercher</button>
+</form>
+{% endblock %}

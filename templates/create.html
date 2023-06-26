@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Ajouter un nouveau jeu</h2>
+
+<form action="/create" method="POST">
+    <label for="name">Nom:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="genre">Genre:</label>
+    <input type="text" id="genre" name="genre" required><br>
+
+    <label for="rating">Note:</label>
+    <input type="text" id="rating" name="rating" required><br>
+
+    <input type="submit" value="Ajouter">
+</form>
+
+{% endblock %}
