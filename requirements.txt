@@ -1,2 +1,2 @@
-sqlalchemy
+Flask-SQLAlchemy
 Flask-Migrate
